@@ -28,13 +28,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"></body>
+      <body className="min-h-full flex w-full  flex-col"></body>
       
-        <nav  className=" text-2xl   bg-gray-400  gap-10   justify-between py-4  px-4 items-center  flex text-2x1 text-black">
+        <nav  className=" text-2xl  flex-wrap  md:gap-10  p-4  w-full bg-gray-400  gap-10   justify-between py-4  px-4 items-center  flex text-2x1 text-black">
           <div className="font-bold text-3xl">
     <h1>Profile</h1>
   </div>
-          <div className="flex gap-6 items-center">
+          <div className="flex   gap-6    items-center   ">
     <Link href="/" className="px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors duration-300 ">Home</Link>
     <Link href="/About" className="px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors duration-300">About</Link>
     <Link href="/project" className="px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors duration-300">Projects</Link>
