@@ -34,7 +34,7 @@ export default function RootLayout({
           <div className="font-bold text-3xl">
     <h1>Profile</h1>
   </div>
-          <div className="flex   gap-6    items-center   ">
+          <div className="flex   gap-6  flex-wrap justify-center overflow-x-hidden  items-center   ">
     <Link href="/" className="px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors duration-300 ">Home</Link>
     <Link href="/About" className="px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors duration-300">About</Link>
     <Link href="/project" className="px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors duration-300">Projects</Link>
