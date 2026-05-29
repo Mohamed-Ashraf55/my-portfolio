@@ -1,6 +1,9 @@
+"use client"
+
 import { title } from "process";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 
 
@@ -38,17 +41,25 @@ export default function project(){
 
     ];
     return(
-        <div  className="min-h-screen  bg-gray-600">
+        <motion.div  className="min-h-screen  bg-gray-600">
+
             <h1  className="font-extrabold  text-3xl text-center mb-7">My projects</h1>
-            <div  className=" grid  md:grid-cols-2  gap-6">
+          
+            < motion.div  className=" grid  md:grid-cols-2  gap-6">
                 {project.map((project, index) =>(
-                    <div key={index}  className="bg-gray-700 mb-5  text-center shadow-md  rounded-4xl p-10 hover:shadow-lg transition">
+                    <motion.div key={index}  initial={{ opacity: 0, y: 50 }}   // يبدأ من تحت وبشفافية
+            animate={{ opacity: 1, y: 0 }}    // يطلع لفوق ويبان
+            transition={{ duration: 0.8, delay: index * 0.3 }} className="bg-gray-700 mb-5  text-center shadow-md  rounded-4xl p-10 hover:shadow-lg transition">
                        {/* عنوان المشروع*/}
                        <h2  className="font-extralight text-white  text-center">{project.title}</h2>
 
-
+<motion.div initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8 }}>
+ <Image   src={project.image}    width={1000}  height={100}  alt="{project.title}" className=" object-cover   rounded-4xl" />
+</motion.div>
                        {/* صورة المشروع*/}
-                       <Image   src={project.image}    width={1000}  height={100}  alt="{project.title}" className=" object-cover   rounded-4xl" />
+                       
 
 
                        
@@ -64,10 +75,10 @@ export default function project(){
 
 
 
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
         
     )
 }
