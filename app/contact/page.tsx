@@ -18,10 +18,10 @@ export default function Contact(){
                   or contact me through these links.</motion.p>
 
                   {/* روابط التواصل */}
-                  <motion.div  className="flex gap-6">
-                    <Link  href="mohamedashraff200@gmail.com"  className="px-4 py-2 bg-gray-800 text-white flex  gap-1    items-center rounded-2xl hover:bg-gray-700"> <SiMealie/> Email<SiMealie/></Link>
-                     <Link  href="https://www.linkedin.com/in/mohamed-ashraf-7270b223b"  className="px-4 py-2 bg-gray-800 flex  gap-1    items-center text-white rounded-2xl hover:bg-gray-700"> <FaLinkedin/>LinkedIn <FaLinkedin/></Link>
-                     <Link  href="https://github.com/Mohamed-Ashraf55"  className="px-4 py-2 bg-gray-800 text-white rounded-2xl flex  gap-1    items-center hover:bg-gray-700"><FaGithub/> GitHub  <FaGithub/></Link>
+                  <motion.div    className="flex gap-6">
+                    <motion.a   whileHover={{scale:0.8}}  href="mohamedashraff200@gmail.com"  className="px-4 py-2 bg-gray-800 text-white flex  gap-1    items-center rounded-2xl hover:bg-gray-700"> <SiMealie/> Email<SiMealie/></motion.a>
+                     <motion.a   whileHover={{scale:0.8}}  href="https://www.linkedin.com/in/mohamed-ashraf-7270b223b"  className="px-4 py-2 bg-gray-800 flex  gap-1    items-center text-white rounded-2xl hover:bg-gray-700"> <FaLinkedin/>LinkedIn <FaLinkedin/></motion.a>
+                     <motion.a   whileHover={{scale:0.8}}  href="https://github.com/Mohamed-Ashraf55"  className="px-4 py-2 bg-gray-800 text-white rounded-2xl flex  gap-1    items-center hover:bg-gray-700"><FaGithub/> GitHub  <FaGithub/></motion.a>
 
 
                   </motion.div>

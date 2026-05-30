@@ -46,12 +46,12 @@ export default function About(){
               <section className="max-w-2xl  mt-10">
         <h2 className="text-4xl font-semibold items-center justify-center flex flex-col   mb-4">My skills</h2>
         <div className="grid grid-cols-3 gap-4 text-lg items-center justify-center ">
-          <a    className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2"    href="#"><FaHtml5 className="text-red-400 size-7"/> HTML</a>
-          <a  className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2 " href="#"><FaCss3   className="text-blue-400  size-7"/> CSS</a>
-          <a  className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl gap-2 " href="#"><FaJava   className="text-amber-200  size-7"/>  JavaScript</a>
-          <a  className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2"  href="#"><FaReact  className="text-blue-400  size-7"/>React</a>
-          <a  className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2"  href="#"><SiNextdotjs className="text-black  size-7" />Next.js</a>
-          <a   className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2" href="#"><SiTailwindcss  className="text-blue-400  size-7"/> Tailwind CSS</a>
+          <motion.a   whileHover={{scale:0.8}}  className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2"    href="#"><FaHtml5 className="text-red-400 size-7"/> HTML</motion.a>
+          <motion.a   whileHover={{scale:0.8}} className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2 " href="#"><FaCss3   className="text-blue-400  size-7"/> CSS</motion.a>
+          <motion.a   whileHover={{scale:0.8}} className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl gap-2 " href="#"><FaJava   className="text-amber-200  size-7"/>  JavaScript</motion.a>
+          <motion.a   whileHover={{scale:0.8}} className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2"  href="#"><FaReact  className="text-blue-400  size-7"/>React</motion.a>
+          <motion.a   whileHover={{scale:0.8}} className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2"  href="#"><SiNextdotjs className="text-black  size-7" />Next.js</motion.a>
+          <motion.a     whileHover={{scale:0.8}} className="bg-gray-600 items-center justify-center  flex p-1 rounded-2xl  gap-2" href="#"><SiTailwindcss  className="text-blue-400  size-7"/> Tailwind CSS</motion.a>
         </div>
       </section>
             </motion.div>

@@ -49,9 +49,9 @@ export default function Home(){
         transition={{ duration: 1 }}>
   <div  className="flex gap-4 mt-5">
  
-  <Link  className="  bg-white  p-2  hover:bg-gray-400 rounded-3xl flex  gap-1    items-center  text-black" href="https://github.com/Mohamed-Ashraf55"><FaGithub size={28}/>GitHub  </Link>
-  <Link  className="bg-white p-2  hover:bg-gray-400 rounded-3xl  flex  gap-1  items-center  text-black" href="https://www.linkedin.com/in/mohamed-ashraf-7270b223b/"> <FaLinkedin size={28}/>LinkedIn</Link>
-  <Link  className="bg-white p-2  hover:bg-gray-400 rounded-3xl  flex  gap-1 items-center text-black" href="https://www.behance.net/mohamedashraf233"> <FaBehance size={28}/> Behance</Link>
+  <motion.a  whileHover={{scale:1.1}}  className="  bg-white  p-2  hover:bg-gray-400 rounded-3xl flex  gap-1    items-center  text-black" href="https://github.com/Mohamed-Ashraf55"><FaGithub size={28}/>GitHub  </motion.a>
+  <motion.a  whileHover={{scale:1.1}}  className="bg-white p-2  hover:bg-gray-400 rounded-3xl  flex  gap-1  items-center  text-black" href="https://www.linkedin.com/in/mohamed-ashraf-7270b223b/"> <FaLinkedin size={28}/>LinkedIn</motion.a>
+  <motion.a  whileHover={{scale:1.1}}   className="bg-white p-2  hover:bg-gray-400 rounded-3xl  flex  gap-1 items-center text-black" href="https://www.behance.net/mohamedashraf233"> <FaBehance size={28}/> Behance</motion.a>
 
 </div>
 </motion.div>
